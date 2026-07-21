@@ -350,6 +350,7 @@ button {
     grid-template-columns: 1fr 1fr;
     gap: var(--espacamento-lg);
     align-items: center;
+    margin-top: 0.8rem;
 }
 
 .hero-title {
@@ -562,6 +563,7 @@ button {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
     overflow: hidden;
     border-bottom: 3px solid transparent;
+    padding-bottom: 0.7rem;
 }
 
 .servico-card:hover {
