@@ -47,8 +47,8 @@
                 <nav class="nav" id="nav-menu">
                     <ul class="nav-list">
                         <li><a href="#home" class="nav-link">Início</a></li>
-                        <li><a href="#sobre" class="nav-link">Sobre</a></li>
                         <li><a href="#servicos" class="nav-link">Serviços</a></li>
+                        <li><a href="#sobre" class="nav-link">Sobre</a></li>
                         <li><a href="#depoimentos" class="nav-link">Depoimentos</a></li>
                         <li><a href="#faq" class="nav-link">FAQ</a></li>
                         <li><a href="#contato" class="nav-link">Contato</a></li>
@@ -69,7 +69,7 @@
     </header>
 
     <!-- ========================================
-         SEÇÃO HERO / BANNER PRINCIPAL
+         SEÇÃO HERO / BANNER PRINCIPAL COM SERVIÇOS EM DESTAQUE
          ======================================== -->
     <section class="hero" id="home">
         <!-- ========== BACKGROUND COM OVERLAY ========== -->
@@ -79,43 +79,154 @@
         <div class="hero-overlay"></div>
 
         <div class="container">
-            <div class="hero-content">
+            <div class="hero-content" style="flex-direction: column; align-items: center; text-align: center;">
 
                 <!-- ========== TEXTO HERO ========== -->
-                <div class="hero-text">
+                <div class="hero-text" style="max-width: 800px; margin-bottom: 30px;">
                     <h1 class="hero-title">
                         Diógenes <span class="highlight">Barbearia</span>
                     </h1>
                     <p class="hero-description">
-                        Atendimentos com hora marcada. Estilo, conforto e profissionalismo para dar aquele tapa no visual. Garanta sua vaga com exclusividade!
+                        Confira nossos serviços abaixo e agende seu horário direto pelo WhatsApp com praticidade e exclusividade!
                     </p>
-
-                    <!-- ========== BOTÕES CTA ========== -->
-                    <div class="hero-buttons">
-                        <a href="#servicos" class="btn btn-secondary btn-large">Ver Serviços</a>
-                        <a href="https://wa.me/5561996321457?text=Ol%C3%A1%21+Quero+dar+um+tapa+no+visual.+Quais+s%C3%A3o+os+hor%C3%A1rios+dispon%C3%ADveis%3F" target="_blank" class="btn btn-primary btn-large">✂️ Agendar pelo WhatsApp</a>
-                    </div>
-
-                    <!-- ========== BADGES/DESTAQUES ========== -->
-                    <div class="hero-badges">
-                        <div class="badge">
-                            <span class="badge-icon">📅</span>
-                            <span class="badge-text">Hora Marcada</span>
-                        </div>
-                        <div class="badge">
-                            <span class="badge-icon">⚡</span>
-                            <span class="badge-text">Atendimento Exclusivo</span>
-                        </div>
-                    </div>
                 </div>
 
-                <!-- ========== IMAGEM HERO ========== -->
-                <div class="hero-image">
-                    <div class="hero-image-container">
-                        <img src="./img/barbearia.png"
-                            alt="Corte de cabelo masculino">
+                <!-- ========== GRID DE SERVIÇOS LOGO NA ENTRADA ========== -->
+                <div class="servicos-grid" style="width: 100%; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px;">
+                    
+                    <!-- Serviço 1: Limpeza de Pele -->
+                    <div class="servico-card" style="background: rgba(255, 255, 255, 0.95); padding: 20px; border-radius: 10px; display: flex; flex-direction: column; justify: space-between;">
+                        <h3 class="servico-title" style="color: #222; margin-bottom: 10px;">Limpeza de Pele</h3>
+                        <p class="servico-description" style="color: #555; font-size: 0.9rem; margin-bottom: 15px;">
+                            Tratamento facial para remoção de impurezas e renovação da pele.
+                        </p>
+                        <a href="https://wa.me/5561996321457?text=Ol%C3%A1%21+Gostaria+de+agendar+uma+Limpeza+de+Pele." target="_blank" class="btn btn-primary" style="padding: 10px; font-size: 0.9rem;">Agendar Horário</a>
                     </div>
+
+                    <!-- Serviço 2: Corte de Cabelo -->
+                    <div class="servico-card" style="background: rgba(255, 255, 255, 0.95); padding: 20px; border-radius: 10px; display: flex; flex-direction: column; justify: space-between;">
+                        <h3 class="servico-title" style="color: #222; margin-bottom: 10px;">Corte de Cabelo</h3>
+                        <p class="servico-description" style="color: #555; font-size: 0.9rem; margin-bottom: 15px;">
+                            Cortes modernos ou clássicos sob medida para o seu estilo.
+                        </p>
+                        <a href="https://wa.me/5561996321457?text=Ol%C3%A1%21+Gostaria+de+agendar+um+Corte+de+Cabelo." target="_blank" class="btn btn-primary" style="padding: 10px; font-size: 0.9rem;">Agendar Horário</a>
+                    </div>
+
+                    <!-- Serviço 3: Design de Barba com Barboterapia -->
+                    <div class="servico-card" style="background: rgba(255, 255, 255, 0.95); padding: 20px; border-radius: 10px; display: flex; flex-direction: column; justify: space-between;">
+                        <h3 class="servico-title" style="color: #222; margin-bottom: 10px;">Design de Barba + Barboterapia</h3>
+                        <p class="servico-description" style="color: #555; font-size: 0.9rem; margin-bottom: 15px;">
+                            Alinhamento de barba com toalha quente e massagem relaxante.
+                        </p>
+                        <a href="https://wa.me/5561996321457?text=Ol%C3%A1%21+Gostaria+de+agendar+o+Design+de+Barba+com+Barboterapia." target="_blank" class="btn btn-primary" style="padding: 10px; font-size: 0.9rem;">Agendar Horário</a>
+                    </div>
+
+                    <!-- Serviço 4: Hidratação -->
+                    <div class="servico-card" style="background: rgba(255, 255, 255, 0.95); padding: 20px; border-radius: 10px; display: flex; flex-direction: column; justify: space-between;">
+                        <h3 class="servico-title" style="color: #222; margin-bottom: 10px;">Hidratação</h3>
+                        <p class="servico-description" style="color: #555; font-size: 0.9rem; margin-bottom: 15px;">
+                            Tratamento profundo para devolver a maciez e brilho dos fios.
+                        </p>
+                        <a href="https://wa.me/5561996321457?text=Ol%C3%A1%21+Gostaria+de+agendar+uma+Hidrata%C3%A7%C3%A3o." target="_blank" class="btn btn-primary" style="padding: 10px; font-size: 0.9rem;">Agendar Horário</a>
+                    </div>
+
+                    <!-- Serviço 5: Desondulamento de Cabelo -->
+                    <div class="servico-card" style="background: rgba(255, 255, 255, 0.95); padding: 20px; border-radius: 10px; display: flex; flex-direction: column; justify: space-between;">
+                        <h3 class="servico-title" style="color: #222; margin-bottom: 10px;">Desondulamento de Cabelo</h3>
+                        <p class="servico-description" style="color: #555; font-size: 0.9rem; margin-bottom: 15px;">
+                            Procedimento para alinhar os fios e reduzir o volume do cabelo.
+                        </p>
+                        <a href="https://wa.me/5561996321457?text=Ol%C3%A1%21+Gostaria+de+agendar+um+Desondulamento+de+Cabelo." target="_blank" class="btn btn-primary" style="padding: 10px; font-size: 0.9rem;">Agendar Horário</a>
+                    </div>
+
                 </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         SEÇÃO SERVIÇOS DETALHADOS
+         ======================================== -->
+    <section class="servicos" id="servicos">
+        <div class="container">
+
+            <!-- ========== TÍTULO DA SEÇÃO ========== -->
+            <div class="section-header">
+                <span class="section-label">Nossos Serviços</span>
+                <h2 class="section-title">O cuidado ideal para o seu visual</h2>
+                <p class="section-description">
+                    Escolha o serviço ideal e agende seu horário com antecedência. Atendimentos exclusivos e personalizados.
+                </p>
+            </div>
+
+            <!-- ========== GRID DE SERVIÇOS DETALHADO ========== -->
+            <div class="servicos-grid">
+
+                <!-- Serviço 1 -->
+                <div class="servico-card">
+                    <div class="servico-image">
+                        <img src="https://images.unsplash.com/photo-1520338661084-680395057c93?q=80"
+                            alt="Corte Masculino">
+                    </div>
+                    <h3 class="servico-title">Corte de Cabelo</h3>
+                    <p class="servico-description">
+                        Do clássico ao moderno (degradê, surfista, social). Um corte que valoriza o seu estilo.
+                    </p>
+                    <a href="https://wa.me/5561996321457?text=Ol%C3%A1%21+Gostaria+de+agendar+um+Corte+de+Cabelo." target="_blank" class="btn btn-primary" style="margin-top: 15px;">Agendar Horário</a>
+                </div>
+
+                <!-- Serviço 2 -->
+                <div class="servico-card">
+                    <div class="servico-image">
+                        <img src="https://images.unsplash.com/photo-1653875700329-a7c8aca94c95?q=80"
+                            alt="Barba com Barboterapia">
+                    </div>
+                    <h3 class="servico-title">Design de Barba com Barboterapia</h3>
+                    <p class="servico-description">
+                        Modelagem e alinhamento de barba com uso de toalha quente, óleos essenciais e pós-barba calmante.
+                    </p>
+                    <a href="https://wa.me/5561996321457?text=Ol%C3%A1%21+Gostaria+de+agendar+o+Design+de+Barba+com+Barboterapia." target="_blank" class="btn btn-primary" style="margin-top: 15px;">Agendar Horário</a>
+                </div>
+
+                <!-- Serviço 3 -->
+                <div class="servico-card">
+                    <div class="servico-image">
+                        <img src="https://images.unsplash.com/photo-1514336937476-a5b961020a5c?q=80"
+                            alt="Limpeza de Pele">
+                    </div>
+                    <h3 class="servico-title">Limpeza de Pele</h3>
+                    <p class="servico-description">
+                        Remoção de cravos e impurezas, desobstrução dos poros e renovação para uma pele saudável.
+                    </p>
+                    <a href="https://wa.me/5561996321457?text=Ol%C3%A1%21+Gostaria+de+agendar+uma+Limpeza+de+Pele." target="_blank" class="btn btn-primary" style="margin-top: 15px;">Agendar Horário</a>
+                </div>
+
+                <!-- Serviço 4 -->
+                <div class="servico-card">
+                    <div class="servico-image">
+                        <img src="https://images.unsplash.com/photo-1735150949874-ec9c9c82b2c4?q=80" alt="Hidratação">
+                    </div>
+                    <h3 class="servico-title">Hidratação Capilar</h3>
+                    <p class="servico-description">
+                        Tratamento intensivo com cremes premium para restaurar o brilho e a saúde dos fios.
+                    </p>
+                    <a href="https://wa.me/5561996321457?text=Ol%C3%A1%21+Gostaria+de+agendar+uma+Hidrata%C3%A7%C3%A3o." target="_blank" class="btn btn-primary" style="margin-top: 15px;">Agendar Horário</a>
+                </div>
+
+                <!-- Serviço 5 -->
+                <div class="servico-card">
+                    <div class="servico-image">
+                        <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=400&q=80"
+                            alt="Desondulamento de Cabelo">
+                    </div>
+                    <h3 class="servico-title">Desondulamento de Cabelo</h3>
+                    <p class="servico-description">
+                        Redução de volume e alinhamento dos fios capilares com acabamento natural.
+                    </p>
+                    <a href="https://wa.me/5561996321457?text=Ol%C3%A1%21+Gostaria+de+agendar+um+Desondulamento+de+Cabelo." target="_blank" class="btn btn-primary" style="margin-top: 15px;">Agendar Horário</a>
+                </div>
+
             </div>
         </div>
     </section>
@@ -189,103 +300,6 @@
                 <div class="galeria-item">
                     <img src="https://images.unsplash.com/photo-1648221122279-5246dd0cf86c?q=80"
                         alt="Navalha clássica">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ========================================
-         SEÇÃO SERVIÇOS
-         ======================================== -->
-    <section class="servicos" id="servicos">
-        <div class="container">
-
-            <!-- ========== TÍTULO DA SEÇÃO ========== -->
-            <div class="section-header">
-                <span class="section-label">Nossos Serviços</span>
-                <h2 class="section-title">O cuidado ideal para o seu visual</h2>
-                <p class="section-description">
-                    Escolha o serviço ideal e agende seu horário com antecedência. Atendimentos exclusivos e personalizados.
-                </p>
-            </div>
-
-            <!-- ========== GRID DE SERVIÇOS ========== -->
-            <div class="servicos-grid">
-
-                <!-- Serviço 1 -->
-                <div class="servico-card">
-                    <div class="servico-image">
-                        <img src="https://images.unsplash.com/photo-1520338661084-680395057c93?q=80"
-                            alt="Corte Masculino">
-                    </div>
-                    <div class="servico-icon"></div>
-                    <h3 class="servico-title">Corte de Cabelo</h3>
-                    <p class="servico-description">
-                        Do clássico ao moderno (degradê, surfista, social). Um corte que valoriza o seu estilo.
-                    </p>
-                </div>
-
-                <!-- Serviço 2 -->
-                <div class="servico-card">
-                    <div class="servico-image">
-                        <img src="https://images.unsplash.com/photo-1648221122279-5246dd0cf86c?q=80"
-                            alt="Barba alinhada">
-                    </div>
-                    <div class="servico-icon"></div>
-                    <h3 class="servico-title">Barba Completa</h3>
-                    <p class="servico-description">
-                        Modelagem, alinhamento e design com uso de óleos essenciais e acabamento impecável.
-                    </p>
-                </div>
-
-                <!-- Serviço 3 -->
-                <div class="servico-card">
-                    <div class="servico-image">
-                        <img src="https://images.unsplash.com/photo-1589985494639-69e60c82cab2?q=80"
-                            alt="Combo Cabelo e Barba">
-                    </div>
-                    <div class="servico-icon"></div>
-                    <h3 class="servico-title">Combo Cabelo & Barba</h3>
-                    <p class="servico-description">
-                        O trato completo para o seu visual com desconto especial para os dois serviços agendados juntos.
-                    </p>
-                </div>
-
-                <!-- Serviço 4 -->
-                <div class="servico-card">
-                    <div class="servico-image">
-                        <img src="https://images.unsplash.com/photo-1735150949874-ec9c9c82b2c4?q=80" alt="Pezinho">
-                    </div>
-                    <div class="servico-icon"></div>
-                    <h3 class="servico-title">Acabamento / Pezinho</h3>
-                    <p class="servico-description">
-                        Manutenção rápida das laterais e contorno do cabelo para manter o visual limpo no dia a dia.
-                    </p>
-                </div>
-
-                <!-- Serviço 5 -->
-                <div class="servico-card">
-                    <div class="servico-image">
-                        <img src="https://images.unsplash.com/photo-1653875700329-a7c8aca94c95?q=80" alt="Terapia">
-                    </div>
-                    <div class="servico-icon"></div>
-                    <h3 class="servico-title">Barboterapia</h3>
-                    <p class="servico-description">
-                        Barba feita na navalha com toalha quente, massagem facial e pós-barba calmante.
-                    </p>
-                </div>
-
-                <!-- Serviço 6 -->
-                <div class="servico-card">
-                    <div class="servico-image">
-                        <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=400&q=80"
-                            alt="Estilo">
-                    </div>
-                    <div class="servico-icon"></div>
-                    <h3 class="servico-title">Penteado & Linhas</h3>
-                    <p class="servico-description">
-                        Finalização profissional com pomadas premium e riscos em navalha de acordo com seu gosto.
-                    </p>
                 </div>
             </div>
         </div>
@@ -444,7 +458,7 @@
 
                 <!-- Depoimento 2 -->
                 <div class="depoimento-card">
-                    <div class="depoimento-rating">⭐⭐⭐⭐微</div>
+                    <div class="depoimento-rating">⭐⭐⭐⭐⭐</div>
                     <p class="depoimento-text">
                         "Melhor barboterapia que já fiz. Toalha quente, massagem e um cuidado sem igual com a pele. Diógenes é extremamente profissional."
                     </p>
@@ -618,8 +632,8 @@
                     <h3 class="footer-title">Links Rápidos</h3>
                     <ul class="footer-links">
                         <li><a href="#home">Início</a></li>
-                        <li><a href="#sobre">Sobre</a></li>
                         <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
                         <li><a href="#depoimentos">Depoimentos</a></li>
                         <li><a href="#faq">FAQ</a></li>
                         <li><a href="#contato">Contato</a></li>
