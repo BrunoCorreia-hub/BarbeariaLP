@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo | Barbearia</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="brand">Barbearia<span>Catálogo de Produtos</span></div>
+        <button class="cart-btn" id="openCart">
+            Carrinho
+            <span class="cart-count" id="cartCount" style="display:none;">0</span>
+        </button>
+    </header>
+
+    <main>
+        <div class="intro">
+            <h1>Produtos para levar pra casa</h1>
+            <p>Escolha os produtos e finalize seu pedido direto pelo WhatsApp.</p>
+        </div>
+
+        <div class="grid" id="productGrid"></div>
+    </main>
+
+    <div class="overlay" id="overlay"></div>
+    <aside class="cart-panel" id="cartPanel">
+        <div class="cart-header">
+            <h2>Seu pedido</h2>
+            <button class="close-btn" id="closeCart">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems"></div>
+        <div class="cart-footer">
+            <div class="total-row">
+                <span>Total</span>
+                <strong id="cartTotal">R$ 0,00</strong>
+            </div>
+            <button class="checkout-btn" id="checkoutBtn" disabled>
+                Finalizar pedido no WhatsApp
+            </button>
+        </div>
+    </aside>
+    <script src="script.js"></script>
+</body>
+
+</html>
